@@ -9,58 +9,34 @@
 
 <?php
 
-
-echo "<h1>".$_SERVER['REMOTE_ADDR']."</h1>";
-echo "<h1>".$_SERVER['SERVER_PORT']."</h1>";
-echo "<h1>".$_SERVER['PHP_SELF']."</h1>";
-echo "<h1>".$_SERVER['SERVER_NAME']."</h1>";
-echo "<h1>".$_SERVER['SERVER_SOFTWARE']."</h1>";
-echo "<h1>".$_SERVER['SERVER_PROTOCOL']."</h1>";
-echo "<h1>".$_SERVER['REQUEST_METHOD']."</h1>";
-
-
-
-echo'<div class="bd-example">
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-     
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </div>
-    </div>
+echo '<div class="row">
+<div class="col-4">
+  <div class="list-group" id="list-tab" role="tablist">
+    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">IP:Port</a>
+    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Software</a>
+    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Protocolo</a>
+    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Nome do servidor</a>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
+<div class="col-8">
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">'.$_SERVER['REMOTE_ADDR'].':'.$_SERVER['SERVER_PORT'].'</div>
+    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">'.$_SERVER['SERVER_SOFTWARE'].'</div>
+    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">'.$_SERVER['SERVER_PROTOCOL'].'</div>
+    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">'.$_SERVER['SERVER_NAME'].'</div>
+  
+  </div>
 </div>
-';
+</div>';
+
+// echo "<h1>".$_SERVER['REMOTE_ADDR']."</h1>";
+// echo "<h1>".$_SERVER['SERVER_PORT']."</h1>";
+// echo "<h1>".$_SERVER['PHP_SELF']."</h1>";
+// echo "<h1>".$_SERVER['SERVER_NAME']."</h1>";
+// echo "<h1>".$_SERVER['SERVER_SOFTWARE']."</h1>";
+// echo "<h1>".$_SERVER['SERVER_PROTOCOL']."</h1>";
+// echo "<h1>".$_SERVER['REQUEST_METHOD']."</h1>";
+
 ?>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
