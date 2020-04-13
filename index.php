@@ -9,7 +9,7 @@
 
 <?php
 
-echo '<div class="row">
+echo '<div class="row jumbotrom">
 <div class="col-4">
   <div class="list-group" id="list-tab" role="tablist">
     <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">IP:Port</a>
@@ -20,10 +20,10 @@ echo '<div class="row">
 </div>
 <div class="col-8">
   <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">'.$_SERVER['REMOTE_ADDR'].':'.$_SERVER['SERVER_PORT'].'</div>
-    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">'.$_SERVER['SERVER_SOFTWARE'].'</div>
-    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">'.$_SERVER['SERVER_PROTOCOL'].'</div>
-    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">'.$_SERVER['SERVER_NAME'].'</div>
+    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"><h1>'.$_SERVER['REMOTE_ADDR'].':'.$_SERVER['SERVER_PORT'].'</h1></div>
+    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><h1>'.$_SERVER['SERVER_SOFTWARE'].'</h1></div>
+    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><h1>'.$_SERVER['SERVER_PROTOCOL'].'</h1></div>
+    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"><h1>'.$_SERVER['SERVER_NAME'].'</h1></div>
   
   </div>
 </div>
