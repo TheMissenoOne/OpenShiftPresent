@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <body>
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 <?php
 
 echo'<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner">
   <div class="carousel-item active">
-    <img src="..." class="d-block w-100" alt="...">
+    <h1>AAAAAAAAAAAAAAAAAAAAAAAA</h1>
   </div>
   <div class="carousel-item">
     <img src="..." class="d-block w-100" alt="...">
