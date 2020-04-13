@@ -11,6 +11,14 @@
 
 
 echo "<h1>".$_SERVER['REMOTE_ADDR']."</h1>";
+echo "<h1>".$_SERVER['SERVER_PORT']."</h1>";
+echo "<h1>".$_SERVER['PHP_SELF']."</h1>";
+echo "<h1>".$_SERVER['SERVER_NAME']."</h1>";
+echo "<h1>".$_SERVER['SERVER_SOFTWARE']."</h1>";
+echo "<h1>".$_SERVER['SERVER_PROTOCOL']."</h1>";
+echo "<h1>".$_SERVER['REQUEST_METHOD']."</h1>";
+
+
 
 echo'<div class="bd-example">
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -53,7 +61,6 @@ echo'<div class="bd-example">
 </div>
 </div>
 ';
-
 ?>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
