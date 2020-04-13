@@ -10,7 +10,7 @@
 <?php
 
 
-echo "<h1>"+$_SERVER['REMOTE_ADDR']+"</h1>";
+echo "<h1>".$_SERVER['REMOTE_ADDR']."</h1>";
 
 echo'<div class="bd-example">
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
